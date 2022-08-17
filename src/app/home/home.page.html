@@ -13,16 +13,16 @@
 <div id="card">
   <ion-card  class="centerme">
     <ion-item>
-      <ion-label position="floating" class="centerme">Nombre</ion-label>
-      <ion-input></ion-input>
+      <ion-label position="floating" class="centerme" >Nombre</ion-label>
+      <ion-input #ElementoNombre></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating" class="centerme">Clave</ion-label>
-      <ion-input  type="password"></ion-input>
+      <ion-label position="floating" class="centerme" >Clave</ion-label>
+      <ion-input  type="password" #ElementoClave></ion-input>
     </ion-item>
     <br>
 
-    <ion-button>Ingresar</ion-button>
+    <ion-button (click)="ingresar(ElementoNombre.value,ElementoClave.value)">Ingresar</ion-button>
 
   </ion-card>
 </div>
